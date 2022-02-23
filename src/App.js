@@ -1,25 +1,59 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import "./App.css";
+import SignIn from "./extra/sign-in";
+import SignUp from "./sign-up";
+import Register from "./extra/register";
+import Dashboard from "./extra/dashboard";
+import Section from "./extra/section"
+import dashboard from './extra/dashboard';
+
+
+export default function App() {
+  return( 
+  
+  
+  <div>
+    
+
+
+    {/* <BrowserRouter>
+
+    <Route path='/Login' element={<Login />}></Route>
+    <Route path='/Dashboard' element={<Dashboard />}></Route>
+  
+    
+    </BrowserRouter>  */}
+    
+    {/* <Register/> */}
+    <SignIn/>
+    <Dashboard />
+   
+
+  </div>
+
+
+
+
   );
 }
 
-export default App;
+  // function Login(){
+  //   return <button>Login</button>;
+  // }
+
+  
+  // function Dashboard(){
+  //   return <button>Login</button>;
+  // }
+
+
+
+// function Login(){
+//   return <button>Login</button>;
+// }
+
+// function Dashboard(){
+//   return <button>Login</button>;
+// }
